@@ -1,19 +1,24 @@
-#Custom Stack in C++
+# C++ Linked Stack
 
-A generic stack implementation using a singly linked list.
+A **template-based stack implementation** in C++ using a singly linked list (STL-style).
+
+This project implements a stack container with basic stack operations, designed to help understand **memeory management**, **deep copying**, and **Rule of Three** in C++.
 
 ## Features
-- Template-based design
-- Deep copy support (Rule of Three)
-- Dynamic memeory management
-- Exception-safe pop and peek
-- STL-like interface
+- Generic template-based stack (works with any data type)
+- Implements Rule of Three:
+  - Copy constructor
+  - Copy assignment operator
+  - Destructor
+- Dynamic memeory management using linked list
+- Exception-safe `peek()` and `pop()` operations
+- STL-like interface: `push`, `peek`, `pop`, `empty`
 
 ## Motivation
-Built to understand how std::stack works internally and to practice memeory ownership and copy semantics in C++.
+I built this project to understand how `std::stack` works internally and to practice managing memory in C++ safely. It also helps reinforce concepts like deep vs shallow copy, exception handling, and linked list manipulation.
 
 ## Usage
-Include stack.cpp and use like a normal stack
+Include the source file (`stack.cpp`) and use it like a normal stack:
 
 ```cpp
 #include "stack.cpp"
